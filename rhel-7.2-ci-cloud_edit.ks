@@ -24,13 +24,8 @@ zerombr
 clearpart --all --initlabel
 part / --size 8000 --fstype xfs --ondisk vda
 
-#reboot
-#halt
 poweroff
 
-# Repositories; gets wiped out by Brew
-repo --name="rhel7" --baseurl=http://download.eng.bos.redhat.com/composes/released/RHEL-7/7.2/Server/x86_64/os/
-repo --name="qe-cloud" --baseurl=http://download.eng.bos.redhat.com/rcm-guest/qeos-cloud-init/7.2/latest/x86_64/os/
 
 # Packages
 %packages
